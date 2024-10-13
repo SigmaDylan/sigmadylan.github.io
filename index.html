@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FREAKY MENU</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>freakymenu.lol</h1>
+        <p class="subtitle">Webhook Utilities</p>
+
+        <div class="form-group">
+            <label for="webhook">webhook URL:</label>
+            <input type="text" id="webhook" placeholder="Enter Webhook URL" />
+        </div>
+
+        <div class="form-group">
+            <label for="username">name on webhook (Optional):</label>
+            <input type="text" id="username" placeholder="Enter Name (optional)" />
+        </div>
+
+        <div class="form-group">
+            <label for="message">message:</label>
+            <input type="text" id="message" placeholder="Enter Message" />
+        </div>
+
+        <div class="form-group">
+            <label for="amount">amount of messages:</label>
+            <input type="number" id="amount" placeholder="Enter Number of Messages" />
+        </div>
+
+        <div class="form-group">
+            <label for="delay">delay between messages:</label>
+            <input type="number" id="delay" placeholder="Enter Delay in seconds" />
+        </div>
+
+        <div class="form-group">
+            <label for="tts">enable tts (i think):</label>
+            <input type="checkbox" id="tts">
+        </div>
+
+        <button id="spamWebhookBtn">Spam Webhook</button>
+        <button id="deleteWebhookBtn">Delete Webhook</button>
+        <button id="webhookInfoBtn">Webhook Info</button>
+
+        <p id="response"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
